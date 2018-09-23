@@ -1,5 +1,6 @@
 let can;let bRight;let legs,radioP;
 let a,b,br;let tree=[];
+let sl,par_sl;
 function setup() {
   startup();
 can=createCanvas(600,400);can.position(450,150);
@@ -7,7 +8,10 @@ can.class("can_bord");
 can.mousePressed(moreLegs);
 legs=createRadio();legs.option('one',1);legs.option('two',2);legs.option('three',3);
 legs.option('four',4);legs.option('five',5);
-
+sl=createSlider(0,2,.4,.1);
+par_sl=createP("slide to change arm length");
+sl.parent(par_sl);par_sl.position(1100,200);
+par_sl.class("radio_bord");
 legs.parent("#radio");
 radioP=select('#radio');
 radioP.class("radio_bord");
