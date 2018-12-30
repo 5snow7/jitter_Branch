@@ -30,10 +30,7 @@ for(let j=0;j<tree.length;j++){
   tree[j].show();
   tree[j].jitter();
 number=legs.value();
-
-}
-}
-
+}}
 function moreLegs(){
   for(let j=tree.length-1;j>=0;j--){
    if(number==1){tree.push(tree[j].branchR());}
@@ -49,14 +46,9 @@ tree.push(tree[j].branchR());tree.push(tree[j].branchL());
 //tree.push(tree[j].branchM());
 tree.push(tree[j].branchRr());
 tree.push(tree[j].branchLl());}
-
-  }
-}
-
-
+}}
 function butt(){
 legs=createRadio();
 radio.option('one');radio.option('two');radio.option('three');
 radio.option('four');radio.option('five');
-
 }
